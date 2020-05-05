@@ -1,4 +1,4 @@
-package app.ui;
+package app.ui.piano;
 
 import javafx.scene.media.AudioClip;
 

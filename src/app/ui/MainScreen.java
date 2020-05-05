@@ -1,9 +1,8 @@
 package app.ui;
 
+import app.ui.piano.PianoPlayer;
+
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.EventListener;
 
 public class MainScreen extends JFrame {
     private JButton btnPiano = new JButton("Piano");
