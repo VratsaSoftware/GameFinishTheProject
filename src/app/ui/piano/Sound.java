@@ -7,7 +7,7 @@ import java.io.*;
 
 public class Sound {
 
-    public static void playSound(File filePath) throws LineUnavailableException, IOException, UnsupportedAudioFileException {
+    public static void playSound(File filePath)  {
         Clip clip;
         try {
             clip = AudioSystem.getClip();

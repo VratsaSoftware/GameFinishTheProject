@@ -9,8 +9,8 @@ import java.awt.event.MouseEvent;
 import java.io.File;
 
 public class PianoPlayer extends JFrame {
-    JPanel[] notesLayout;
-    Container noteContainer;
+    private JPanel[] notesLayout;
+    private Container noteContainer;
 
     public PianoPlayer() {
         super("Piano player");
@@ -32,12 +32,15 @@ public class PianoPlayer extends JFrame {
             public void keyPressed(KeyEvent e){
                 try {
                     playSound(e);
+                    changeColorOfTheNotes(e,Color.RED);
                 } catch (Exception exception) {
                     exception.printStackTrace();
                 }
             }
             @Override
-            public void keyReleased(KeyEvent e) { }
+            public void keyReleased(KeyEvent e) {
+                changeColorOfTheNotes(e,Color.WHITE);
+            }
             // unused
             @Override
             public void keyTyped(KeyEvent e) { }
@@ -53,11 +56,9 @@ public class PianoPlayer extends JFrame {
                 }
             }
         });
-
-
     }
 
-    private void playSound(KeyEvent e) throws Exception{
+    private void playSound(KeyEvent e){
         if (e.getKeyCode()==KeyEvent.VK_1) {
             Sound.playSound(new File("src\\sound\\do-stretched.wav"));
         } else if (e.getKeyCode()==KeyEvent.VK_2) {
@@ -77,7 +78,7 @@ public class PianoPlayer extends JFrame {
         }
     }
 
-    private void playSound(MouseEvent e) throws Exception {
+    private void playSound(MouseEvent e) {
         if (isInRangeForCertainNote(e, 0, 140)) {
             Sound.playSound(new File("src\\sound\\do-stretched.wav"));
         } else if (isInRangeForCertainNote(e, 150, 290)) {
@@ -94,6 +95,26 @@ public class PianoPlayer extends JFrame {
             Sound.playSound(new File("src\\sound\\si-stretched.wav"));
         } else if (isInRangeForCertainNote(e, 1050, 1190)) {
             Sound.playSound(new File("src\\sound\\do-stretched-octave.wav"));
+        }
+    }
+
+    private void changeColorOfTheNotes(KeyEvent e, Color color){
+        if (e.getKeyCode()==KeyEvent.VK_1){
+            notesLayout[0].setBackground(color);
+        }else if(e.getKeyCode()==KeyEvent.VK_2) {
+            notesLayout[1].setBackground(color);
+        }else if(e.getKeyCode()==KeyEvent.VK_3) {
+            notesLayout[2].setBackground(color);
+        }else if(e.getKeyCode()==KeyEvent.VK_4) {
+            notesLayout[3].setBackground(color);
+        }else if(e.getKeyCode()==KeyEvent.VK_5) {
+            notesLayout[4].setBackground(color);
+        }else if(e.getKeyCode()==KeyEvent.VK_6) {
+            notesLayout[5].setBackground(color);
+        }else if(e.getKeyCode()==KeyEvent.VK_7) {
+            notesLayout[6].setBackground(color);
+        }else if(e.getKeyCode()==KeyEvent.VK_8) {
+            notesLayout[7].setBackground(color);
         }
     }
 
