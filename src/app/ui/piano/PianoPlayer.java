@@ -27,30 +27,33 @@ public class PianoPlayer extends JFrame {
             notesLayout[i].setBackground(Color.WHITE);
             noteContainer.add(notesLayout[i]);
         }
-        addKeyListener(new KeyListener(){
+        addKeyListener(new KeyListener() {
             @Override
-            public void keyPressed(KeyEvent e){
+            public void keyPressed(KeyEvent e) {
                 try {
-                    playSound(e);
-                    changeColorOfTheNotes(e,Color.RED);
+                    playSoundWhenButtonPressed(e);
+                    changeColorOfTheNotes(e, Color.RED);
                 } catch (Exception exception) {
                     exception.printStackTrace();
                 }
             }
+
             @Override
             public void keyReleased(KeyEvent e) {
-                changeColorOfTheNotes(e,Color.WHITE);
+                changeColorOfTheNotes(e, Color.WHITE);
             }
+
             // unused
             @Override
-            public void keyTyped(KeyEvent e) { }
+            public void keyTyped(KeyEvent e) {
+            }
             // unused
         });
         noteContainer.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 try {
-                    playSound(e);
+                    playSoundWhenMousePressedPanel(e);
                 } catch (Exception exception) {
                     exception.printStackTrace();
                 }
@@ -58,27 +61,27 @@ public class PianoPlayer extends JFrame {
         });
     }
 
-    private void playSound(KeyEvent e){
-        if (e.getKeyCode()==KeyEvent.VK_1) {
+    private void playSoundWhenButtonPressed(KeyEvent e) {
+        if (e.getKeyCode() == KeyEvent.VK_1) {
             Sound.playSound(new File("src\\sound\\do-stretched.wav"));
-        } else if (e.getKeyCode()==KeyEvent.VK_2) {
+        } else if (e.getKeyCode() == KeyEvent.VK_2) {
             Sound.playSound(new File("src\\sound\\re-stretched.wav"));
-        } else if (e.getKeyCode()==KeyEvent.VK_3) {
+        } else if (e.getKeyCode() == KeyEvent.VK_3) {
             Sound.playSound(new File("src\\sound\\mi-stretched.wav"));
-        } else if (e.getKeyCode()==KeyEvent.VK_4) {
+        } else if (e.getKeyCode() == KeyEvent.VK_4) {
             Sound.playSound(new File("src\\sound\\fa-stretched.wav"));
-        } else if (e.getKeyCode()==KeyEvent.VK_5) {
+        } else if (e.getKeyCode() == KeyEvent.VK_5) {
             Sound.playSound(new File("src\\sound\\sol-stretched.wav"));
-        } else if (e.getKeyCode()==KeyEvent.VK_6) {
+        } else if (e.getKeyCode() == KeyEvent.VK_6) {
             Sound.playSound(new File("src\\sound\\la-stretched.wav"));
-        } else if (e.getKeyCode()==KeyEvent.VK_7) {
+        } else if (e.getKeyCode() == KeyEvent.VK_7) {
             Sound.playSound(new File("src\\sound\\si-stretched.wav"));
-        } else if (e.getKeyCode()==KeyEvent.VK_8) {
+        } else if (e.getKeyCode() == KeyEvent.VK_8) {
             Sound.playSound(new File("src\\sound\\do-stretched-octave.wav"));
         }
     }
 
-    private void playSound(MouseEvent e) {
+    private void playSoundWhenMousePressedPanel(MouseEvent e) {
         if (isInRangeForCertainNote(e, 0, 140)) {
             Sound.playSound(new File("src\\sound\\do-stretched.wav"));
         } else if (isInRangeForCertainNote(e, 150, 290)) {
@@ -98,22 +101,22 @@ public class PianoPlayer extends JFrame {
         }
     }
 
-    private void changeColorOfTheNotes(KeyEvent e, Color color){
-        if (e.getKeyCode()==KeyEvent.VK_1){
+    private void changeColorOfTheNotes(KeyEvent e, Color color) {
+        if (e.getKeyCode() == KeyEvent.VK_1) {
             notesLayout[0].setBackground(color);
-        }else if(e.getKeyCode()==KeyEvent.VK_2) {
+        } else if (e.getKeyCode() == KeyEvent.VK_2) {
             notesLayout[1].setBackground(color);
-        }else if(e.getKeyCode()==KeyEvent.VK_3) {
+        } else if (e.getKeyCode() == KeyEvent.VK_3) {
             notesLayout[2].setBackground(color);
-        }else if(e.getKeyCode()==KeyEvent.VK_4) {
+        } else if (e.getKeyCode() == KeyEvent.VK_4) {
             notesLayout[3].setBackground(color);
-        }else if(e.getKeyCode()==KeyEvent.VK_5) {
+        } else if (e.getKeyCode() == KeyEvent.VK_5) {
             notesLayout[4].setBackground(color);
-        }else if(e.getKeyCode()==KeyEvent.VK_6) {
+        } else if (e.getKeyCode() == KeyEvent.VK_6) {
             notesLayout[5].setBackground(color);
-        }else if(e.getKeyCode()==KeyEvent.VK_7) {
+        } else if (e.getKeyCode() == KeyEvent.VK_7) {
             notesLayout[6].setBackground(color);
-        }else if(e.getKeyCode()==KeyEvent.VK_8) {
+        } else if (e.getKeyCode() == KeyEvent.VK_8) {
             notesLayout[7].setBackground(color);
         }
     }

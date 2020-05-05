@@ -7,8 +7,9 @@ import javax.swing.*;
 public class MainScreen extends JFrame {
     private JButton btnPiano = new JButton("Piano");
     private JPanel mainPanel = new JPanel();
+
     public MainScreen() {
-        setSize(600,600);
+        setSize(600, 600);
         setLocationRelativeTo(null);
         setVisible(true);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
