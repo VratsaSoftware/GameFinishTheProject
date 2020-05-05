@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e4935436-df03-4f19-b2af-f1fd33bef0e6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameFinishTheProject/app/ui/piano/PianoPlayer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameFinishTheProject/app/ui/piano/PianoPlayer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameFinishTheProject/app/ui/piano/PianoPlayer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameFinishTheProject/app/ui/piano/PianoPlayer$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameFinishTheProject/app/ui/piano/PianoPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameFinishTheProject/app/ui/piano/PianoPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameFinishTheProject/app/ui/piano/Sound.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameFinishTheProject/app/ui/piano/Sound.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ui/piano/PianoPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/piano/PianoPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ui/piano/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/ui/piano/Sound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +27,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/piano" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -121,21 +116,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588689813658" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1588691695960">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1588693115710">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588691695960" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1588691695960">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588693115710" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1588693115710">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588691695960" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1588691695960">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588693115710" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1588693115710">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588691695960" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1588691695960">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588693115710" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1588693115710">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588691695960" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588693115710" />
+    <state x="342" y="140" key="new project wizard" timestamp="1588693263317">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="140" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1588693263317" />
   </component>
 </project>
