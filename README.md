@@ -47,12 +47,12 @@ Then go to github and create a push request from your branch to master. And you'
 
 Add a new name to the project when you are changing it.
 
-1.
+1. Piano player
 0. Window Generator
 
 ## Contributors
 
-1. 
+1.Ventsislav Borislavov
 0.Teodor K.
 
 ## Built With
