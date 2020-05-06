@@ -8,7 +8,7 @@ import java.io.File;
 public class PianoPlayer extends Player {
 
     public PianoPlayer() {
-        super("PianoPlayer", 8);
+        super("PianoPlayer", 8,Color.RED);
 
     }
 

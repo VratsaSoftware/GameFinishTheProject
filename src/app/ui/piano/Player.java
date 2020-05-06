@@ -12,7 +12,7 @@ public abstract class Player extends JFrame {
     protected JPanel[] notesLayout;
     private Container noteContainer;
 
-    public Player(String name, int keyCount) {
+    public Player(String name, int keyCount, Color color) {
         super(name);
         setBounds(0, 300, 1200, 600);
         setLocationRelativeTo(null);
@@ -32,7 +32,7 @@ public abstract class Player extends JFrame {
             public void keyPressed(KeyEvent e) {
                 try {
                     playSoundWhenButtonPressed(e);
-                    changeColorOfTheNotes(e, Color.RED);
+                    changeColorOfTheNotes(e, color);
                 } catch (Exception exception) {
                     exception.printStackTrace();
                 }
