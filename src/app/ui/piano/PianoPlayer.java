@@ -1,67 +1,19 @@
 package app.ui.piano;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
 
-public class PianoPlayer extends JFrame {
-    private JPanel[] notesLayout;
-    private Container noteContainer;
+public class PianoPlayer extends Player {
 
     public PianoPlayer() {
-        super("Piano player");
-        setBounds(0, 300, 1200, 600);
-        setLocationRelativeTo(null);
-        setVisible(true);
-        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-        noteContainer = getContentPane();
-        noteContainer.setLayout(new GridLayout(1, 0, 10, 10));
-        noteContainer.setBackground(Color.BLACK);
-        notesLayout = new JPanel[8];
-        for (int i = 0; i < notesLayout.length; i++) {
-            notesLayout[i] = new JPanel();
-            notesLayout[i].setBackground(Color.WHITE);
-            noteContainer.add(notesLayout[i]);
-        }
-        addKeyListener(new KeyListener() {
-            @Override
-            public void keyPressed(KeyEvent e) {
-                try {
-                    playSoundWhenButtonPressed(e);
-                    changeColorOfTheNotes(e, Color.RED);
-                } catch (Exception exception) {
-                    exception.printStackTrace();
-                }
-            }
+        super("PianoPlayer", 8,Color.RED);
 
-            @Override
-            public void keyReleased(KeyEvent e) {
-                changeColorOfTheNotes(e, Color.WHITE);
-            }
-
-            // unused
-            @Override
-            public void keyTyped(KeyEvent e) {
-            }
-            // unused
-        });
-        noteContainer.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                try {
-                    playSoundWhenMousePressedPanel(e);
-                } catch (Exception exception) {
-                    exception.printStackTrace();
-                }
-            }
-        });
     }
 
-    private void playSoundWhenButtonPressed(KeyEvent e) {
+    @Override
+    protected void playSoundWhenButtonPressed(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_1) {
             Sound.playSound(new File("src\\sound\\do-stretched.wav"));
         } else if (e.getKeyCode() == KeyEvent.VK_2) {
@@ -81,7 +33,8 @@ public class PianoPlayer extends JFrame {
         }
     }
 
-    private void playSoundWhenMousePressedPanel(MouseEvent e) {
+    @Override
+    protected void playSoundWhenMousePressedPanel(MouseEvent e) {
         if (isInRangeForCertainNote(e, 0, 140)) {
             Sound.playSound(new File("src\\sound\\do-stretched.wav"));
         } else if (isInRangeForCertainNote(e, 150, 290)) {
@@ -101,7 +54,8 @@ public class PianoPlayer extends JFrame {
         }
     }
 
-    private void changeColorOfTheNotes(KeyEvent e, Color color) {
+    @Override
+    protected void changeColorOfTheNotes(KeyEvent e, Color color) {
         if (e.getKeyCode() == KeyEvent.VK_1) {
             notesLayout[0].setBackground(color);
         } else if (e.getKeyCode() == KeyEvent.VK_2) {
@@ -120,10 +74,4 @@ public class PianoPlayer extends JFrame {
             notesLayout[7].setBackground(color);
         }
     }
-
-    private boolean isInRangeForCertainNote(MouseEvent e, int xStart, int xEnd) {
-        return e.getX() >= xStart && e.getX() <= xEnd;
-    }
-
-
 }
