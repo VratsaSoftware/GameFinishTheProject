@@ -1,9 +1,8 @@
 package app.ui.piano;
 
-import javafx.scene.media.AudioClip;
-
-import javax.sound.sampled.*;
-import java.io.*;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import java.io.File;
 
 public class Sound {
 
