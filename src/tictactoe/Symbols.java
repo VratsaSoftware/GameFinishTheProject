@@ -1,14 +1,18 @@
 package tictactoe;
 
 public class Symbols {
-    private char symbol;
+    public TextureManager texture;
 
-    public Symbols(char symbol) {
-        this.symbol = symbol;
+    public Symbols(TextureManager texture) {
+        this.texture = texture;
     }
 
-    public char getSymbol() {
-        return symbol;
+    public String getSymbol() {
+        return texture.path;
+    }
+
+    public TextureManager getTexture() {
+        return texture;
     }
 }
 
