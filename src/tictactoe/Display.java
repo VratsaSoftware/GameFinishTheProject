@@ -23,12 +23,10 @@ public class Display{
 
     public void addGraphic(TextureManager t) {
         frame.add(t);
-        System.out.println(frame.getComponentCount());
         frame.setVisible(true);
     }
     public void addComponent(JComponent component) {
         frame.add(component);
-        System.out.println(frame.getComponentCount());
     }
 
     public void removeGraphic(TextureManager t) {

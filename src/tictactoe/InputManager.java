@@ -43,6 +43,7 @@ public class InputManager extends JPanel implements ChangeListener {
 
     private void mousePressed(int xIndex, int yIndex) {
         TestTicTacToe.map.move(xIndex, yIndex);
+
     }
 
     private void mouseReleased() {
