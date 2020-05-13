@@ -1,4 +1,4 @@
-package tictactoe;
+package app.tictactoe;
 
 public class EmptySymbol extends Symbols {
 

@@ -1,11 +1,9 @@
-package tictactoe;
+package app.tictactoe;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.List;
 
 public class InputManager extends JPanel implements ChangeListener {
     private boolean isMouseRealised = false;

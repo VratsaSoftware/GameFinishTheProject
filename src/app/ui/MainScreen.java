@@ -1,8 +1,7 @@
 package app.ui;
 
-import app.ui.piano.GuitarPlayer;
-import app.ui.piano.PianoPlayer;
-import tictactoe.TestTicTacToe;
+import app.ui.players.GuitarPlayer;
+import app.ui.players.PianoPlayer;
 
 import javax.swing.*;
 
