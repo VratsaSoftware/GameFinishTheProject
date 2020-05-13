@@ -1,4 +1,4 @@
-package app.ui.piano;
+package app.ui.players;
 
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;

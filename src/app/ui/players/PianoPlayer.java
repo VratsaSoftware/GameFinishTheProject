@@ -1,4 +1,4 @@
-package app.ui.piano;
+package app.ui.players;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -15,42 +15,42 @@ public class PianoPlayer extends Player {
     @Override
     protected void playSoundWhenButtonPressed(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_1) {
-            Sound.playSound(new File("src\\sound\\do-stretched.wav"));
+            Sound.playSound(new File("src\\app.sound\\do-stretched.wav"));
         } else if (e.getKeyCode() == KeyEvent.VK_2) {
-            Sound.playSound(new File("src\\sound\\re-stretched.wav"));
+            Sound.playSound(new File("src\\app.sound\\re-stretched.wav"));
         } else if (e.getKeyCode() == KeyEvent.VK_3) {
-            Sound.playSound(new File("src\\sound\\mi-stretched.wav"));
+            Sound.playSound(new File("src\\app.sound\\mi-stretched.wav"));
         } else if (e.getKeyCode() == KeyEvent.VK_4) {
-            Sound.playSound(new File("src\\sound\\fa-stretched.wav"));
+            Sound.playSound(new File("src\\app.sound\\fa-stretched.wav"));
         } else if (e.getKeyCode() == KeyEvent.VK_5) {
-            Sound.playSound(new File("src\\sound\\sol-stretched.wav"));
+            Sound.playSound(new File("src\\app.sound\\sol-stretched.wav"));
         } else if (e.getKeyCode() == KeyEvent.VK_6) {
-            Sound.playSound(new File("src\\sound\\la-stretched.wav"));
+            Sound.playSound(new File("src\\app.sound\\la-stretched.wav"));
         } else if (e.getKeyCode() == KeyEvent.VK_7) {
-            Sound.playSound(new File("src\\sound\\si-stretched.wav"));
+            Sound.playSound(new File("src\\app.sound\\si-stretched.wav"));
         } else if (e.getKeyCode() == KeyEvent.VK_8) {
-            Sound.playSound(new File("src\\sound\\do-stretched-octave.wav"));
+            Sound.playSound(new File("src\\app.sound\\do-stretched-octave.wav"));
         }
     }
 
     @Override
     protected void playSoundWhenMousePressedPanel(MouseEvent e) {
         if (isInRangeForCertainNote(e, 0, 140)) {
-            Sound.playSound(new File("src\\sound\\do-stretched.wav"));
+            Sound.playSound(new File("src\\app.sound\\do-stretched.wav"));
         } else if (isInRangeForCertainNote(e, 150, 290)) {
-            Sound.playSound(new File("src\\sound\\re-stretched.wav"));
+            Sound.playSound(new File("src\\app.sound\\re-stretched.wav"));
         } else if (isInRangeForCertainNote(e, 300, 440)) {
-            Sound.playSound(new File("src\\sound\\mi-stretched.wav"));
+            Sound.playSound(new File("src\\app.sound\\mi-stretched.wav"));
         } else if (isInRangeForCertainNote(e, 450, 590)) {
-            Sound.playSound(new File("src\\sound\\fa-stretched.wav"));
+            Sound.playSound(new File("src\\app.sound\\fa-stretched.wav"));
         } else if (isInRangeForCertainNote(e, 600, 740)) {
-            Sound.playSound(new File("src\\sound\\sol-stretched.wav"));
+            Sound.playSound(new File("src\\app.sound\\sol-stretched.wav"));
         } else if (isInRangeForCertainNote(e, 750, 890)) {
-            Sound.playSound(new File("src\\sound\\la-stretched.wav"));
+            Sound.playSound(new File("src\\app.sound\\la-stretched.wav"));
         } else if (isInRangeForCertainNote(e, 900, 1040)) {
-            Sound.playSound(new File("src\\sound\\si-stretched.wav"));
+            Sound.playSound(new File("src\\app.sound\\si-stretched.wav"));
         } else if (isInRangeForCertainNote(e, 1050, 1190)) {
-            Sound.playSound(new File("src\\sound\\do-stretched-octave.wav"));
+            Sound.playSound(new File("src\\app.sound\\do-stretched-octave.wav"));
         }
     }
 

@@ -1,4 +1,4 @@
-package app.ui.piano;
+package app.ui.players;
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,7 +6,6 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.io.File;
 
 public abstract class Player extends JFrame {
     protected JPanel[] notesLayout;

@@ -1,4 +1,4 @@
-package tictactoe;
+package app.tictactoe;
 
 public class MovingAndMap {
     private final int HEIGHT_MAP = 3;

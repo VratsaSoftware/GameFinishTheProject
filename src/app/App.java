@@ -1,7 +1,7 @@
 package app;
 
 import app.ui.MainScreen;
-import tictactoe.TestTicTacToe;
+import app.tictactoe.TestTicTacToe;
 
 public class App {
 
