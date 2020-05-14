@@ -9,7 +9,7 @@ import java.awt.event.MouseEvent;
 
 public abstract class Player extends JFrame {
     protected JPanel[] notesLayout;
-    private Container noteContainer;
+    protected Container noteContainer;
 
     public Player(String name, int keyCount, Color color) {
         super(name);

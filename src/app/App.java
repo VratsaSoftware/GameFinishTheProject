@@ -6,7 +6,6 @@ import app.tictactoe.TestTicTacToe;
 public class App {
 
     public static void main(String[] args) {
-
         new MainScreen();
         new TestTicTacToe();
     }
