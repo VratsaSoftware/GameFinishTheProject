@@ -14,34 +14,34 @@ public class GuitarPlayer extends Player {
     @Override
     protected void playSoundWhenButtonPressed(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_1) {
-            Sound.playSound(new File("src\\app.sound\\Guitar01.wav"));
+            Sound.playSound(new File("src\\app\\sound\\Guitar01.wav"));
         } else if (e.getKeyCode() == KeyEvent.VK_2) {
-            Sound.playSound(new File("src\\app.sound\\Guitar02.wav"));
+            Sound.playSound(new File("src\\app\\sound\\Guitar02.wav"));
         } else if (e.getKeyCode() == KeyEvent.VK_3) {
-            Sound.playSound(new File("src\\app.sound\\Guitar03.wav"));
+            Sound.playSound(new File("src\\app\\sound\\Guitar03.wav"));
         } else if (e.getKeyCode() == KeyEvent.VK_4) {
-            Sound.playSound(new File("src\\app.sound\\Guitar04.wav"));
+            Sound.playSound(new File("src\\app\\sound\\Guitar04.wav"));
         } else if (e.getKeyCode() == KeyEvent.VK_5) {
-            Sound.playSound(new File("src\\app.sound\\Guitar05.wav"));
+            Sound.playSound(new File("src\\app\\sound\\Guitar05.wav"));
         } else if (e.getKeyCode() == KeyEvent.VK_6) {
-            Sound.playSound(new File("src\\app.sound\\Guitar06.wav"));
+            Sound.playSound(new File("src\\app\\sound\\Guitar06.wav"));
         }
     }
 
     @Override
     protected void playSoundWhenMousePressedPanel(MouseEvent e) {
         if (isInRangeForCertainNote(e, 0, 190)) {
-            Sound.playSound(new File("src\\app.sound\\Guitar01.wav"));
+            Sound.playSound(new File("src\\app\\sound\\Guitar01.wav"));
         } else if (isInRangeForCertainNote(e, 200, 390)) {
-            Sound.playSound(new File("src\\app.sound\\Guitar02.wav"));
+            Sound.playSound(new File("src\\app\\sound\\Guitar02.wav"));
         } else if (isInRangeForCertainNote(e, 400, 590)) {
-            Sound.playSound(new File("src\\app.sound\\Guitar03.wav"));
+            Sound.playSound(new File("src\\app\\sound\\Guitar03.wav"));
         } else if (isInRangeForCertainNote(e, 600, 790)) {
-            Sound.playSound(new File("src\\app.sound\\Guitar04.wav"));
+            Sound.playSound(new File("src\\app\\sound\\Guitar04.wav"));
         } else if (isInRangeForCertainNote(e, 800, 990)) {
-            Sound.playSound(new File("src\\app.sound\\Guitar05.wav"));
+            Sound.playSound(new File("src\\app\\sound\\Guitar05.wav"));
         } else if (isInRangeForCertainNote(e, 1000, 1200)) {
-            Sound.playSound(new File("src\\app.sound\\Guitar06.wav"));
+            Sound.playSound(new File("src\\app\\sound\\Guitar06.wav"));
         }
     }
 
