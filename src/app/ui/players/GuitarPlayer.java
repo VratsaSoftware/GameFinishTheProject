@@ -4,11 +4,12 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.io.File;
+import java.util.Collection;
 
 public class GuitarPlayer extends Player {
 
     public GuitarPlayer() {
-        super("GuitarPlayer", 6,Color.BLUE);
+        super("Guitar Player", 6,Color.BLUE);
     }
 
     @Override
@@ -62,4 +63,22 @@ public class GuitarPlayer extends Player {
 
         }
     }
+
+    @Override
+    protected void changeColorOfButtons(MouseEvent m, Color color) {
+        if (isInRangeForCertainNote(m, 0, 190)) {
+            notesLayout[0].setBackground(color);
+        } else if (isInRangeForCertainNote(m, 200, 390)) {
+            notesLayout[1].setBackground(color);
+        } else if (isInRangeForCertainNote(m, 400, 590)) {
+            notesLayout[2].setBackground(color);
+        } else if (isInRangeForCertainNote(m, 600, 790)) {
+            notesLayout[3].setBackground(color);
+        } else if (isInRangeForCertainNote(m, 800, 990)) {
+            notesLayout[4].setBackground(color);
+        } else if (isInRangeForCertainNote(m, 1000, 1200)) {
+            notesLayout[5].setBackground(color);
+        }
+    }
+
 }

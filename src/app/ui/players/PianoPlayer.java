@@ -8,7 +8,7 @@ import java.io.File;
 public class PianoPlayer extends Player {
 
     public PianoPlayer() {
-        super("PianoPlayer", 8,Color.RED);
+        super("Piano Player", 8,Color.RED);
 
     }
 
@@ -71,6 +71,27 @@ public class PianoPlayer extends Player {
         } else if (e.getKeyCode() == KeyEvent.VK_7) {
             notesLayout[6].setBackground(color);
         } else if (e.getKeyCode() == KeyEvent.VK_8) {
+            notesLayout[7].setBackground(color);
+        }
+    }
+
+    @Override
+    protected void changeColorOfButtons(MouseEvent m, Color color) {
+        if (isInRangeForCertainNote(m, 0, 140)) {
+            notesLayout[0].setBackground(color);
+        } else if (isInRangeForCertainNote(m, 150, 290)) {
+            notesLayout[1].setBackground(color);
+        } else if (isInRangeForCertainNote(m, 300, 440)) {
+            notesLayout[2].setBackground(color);
+        } else if (isInRangeForCertainNote(m, 450, 590)) {
+            notesLayout[3].setBackground(color);
+        } else if (isInRangeForCertainNote(m, 600, 740)) {
+            notesLayout[4].setBackground(color);
+        } else if (isInRangeForCertainNote(m, 750, 890)) {
+            notesLayout[5].setBackground(color);
+        } else if (isInRangeForCertainNote(m, 900, 1040)) {
+            notesLayout[6].setBackground(color);
+        } else if (isInRangeForCertainNote(m, 1050, 1190)) {
             notesLayout[7].setBackground(color);
         }
     }

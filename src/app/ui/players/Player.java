@@ -32,6 +32,7 @@ public abstract class Player extends JFrame {
                 try {
                     playSoundWhenButtonPressed(e);
                     changeColorOfTheNotes(e, color);
+
                 } catch (Exception exception) {
                     exception.printStackTrace();
                 }
@@ -53,6 +54,7 @@ public abstract class Player extends JFrame {
             public void mouseClicked(MouseEvent e) {
                 try {
                     playSoundWhenMousePressedPanel(e);
+                    changeColorOfButtons(e, color);
                 } catch (Exception exception) {
                     exception.printStackTrace();
                 }
@@ -66,6 +68,7 @@ public abstract class Player extends JFrame {
 
     protected abstract void changeColorOfTheNotes(KeyEvent e, Color color);
 
+    protected abstract void changeColorOfButtons(MouseEvent m, Color color);
 
     protected boolean isInRangeForCertainNote(MouseEvent e, int xStart, int xEnd) {
         return e.getX() >= xStart && e.getX() <= xEnd;

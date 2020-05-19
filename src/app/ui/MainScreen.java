@@ -6,13 +6,14 @@ import app.ui.players.PianoPlayer;
 import javax.swing.*;
 
 public class MainScreen extends JFrame {
-    private JButton btnPiano = new JButton("Piano");
-    private JButton btnGuitar = new JButton("Guitar");
+    private JButton btnPiano = new JButton("Piano Player");
+    private JButton btnGuitar = new JButton("Guitar Player");
     private JPanel mainPanel = new JPanel();
 
 
     public MainScreen() {
-        setSize(600, 600);
+        setSize(600, 300);
+        setTitle("Music Player");
         setLocationRelativeTo(null);
         setVisible(true);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
