@@ -51,13 +51,17 @@ public abstract class Player extends JFrame {
         });
         noteContainer.addMouseListener(new MouseAdapter() {
             @Override
-            public void mouseClicked(MouseEvent e) {
+            public void mousePressed(MouseEvent e) {
                 try {
                     playSoundWhenMousePressedPanel(e);
                     changeColorOfButtons(e, color);
                 } catch (Exception exception) {
                     exception.printStackTrace();
                 }
+            }
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                changeColorOfButtons(e, Color.WHITE);
             }
         });
     }
