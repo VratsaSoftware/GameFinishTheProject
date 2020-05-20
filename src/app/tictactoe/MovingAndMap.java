@@ -39,11 +39,11 @@ public class MovingAndMap {
         if (map[x][y].path.equals("src\\assets\\tictactoe_empty.png")) {
             if (moveCount % 2 != 0) {
                 TestTicTacToe.display.removeGraphic(map[x][y]);
-                map[x][y] = new TextureManager(y * TestTicTacToe.WIDTH / 3, x * TestTicTacToe.HEIGHT / 3, TestTicTacToe.WIDTH / 3
+                map[x][y] = new TextureManager(x * TestTicTacToe.WIDTH / 3, y * TestTicTacToe.HEIGHT / 3, TestTicTacToe.WIDTH / 3
                         , TestTicTacToe.HEIGHT / 3, "src\\assets\\tictactoe_x.png");
             } else {
                 TestTicTacToe.display.removeGraphic(map[x][y]);
-                map[x][y] = new TextureManager(y * TestTicTacToe.WIDTH / 3, x * TestTicTacToe.HEIGHT / 3, TestTicTacToe.WIDTH / 3
+                map[x][y] = new TextureManager(x * TestTicTacToe.WIDTH / 3, y * TestTicTacToe.HEIGHT / 3, TestTicTacToe.WIDTH / 3
                         , TestTicTacToe.HEIGHT / 3, "src\\assets\\tictactoe_o.png");;
             }
             if (checkForChecks()) {
