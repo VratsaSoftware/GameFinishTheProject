@@ -11,16 +11,24 @@ public class TestTicTacToe {
     public static InputManager input;
 
     public TestTicTacToe() {
-        display = new Display(600, 600, "TicTacToe");
-        input = new InputManager();
-        map = new MovingAndMap();
         runGame();
     }
 
     public void runGame() {
 
+        display = new Display(600, 600, "TicTacToe");
+        input = new InputManager();
+        map = new MovingAndMap();
+
         while (MovingAndMap.isGame) {
             input.update();
+            if (map.checkForChecks()) {
+                display = new Display(600, 600, "TicTacToe");
+                input = new InputManager();
+                map = new MovingAndMap();
+            }
+
+
         }
 
     }
