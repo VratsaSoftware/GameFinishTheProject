@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="02c2b45b-bafb-4a30-ac32-66ea8ae0b878" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1cSm5sORTOHs998HYzDO8tMbaP1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/GameFinishTheProject-master/src/app/snake" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GameFinishTheProject-master\GameFinishTheProject-master\src\app\snake\images" />
+      <recent name="D:\GameFinishTheProject-master\GameFinishTheProject-master\src\app\snake" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="app.snake.snake.out.production.untitled1.images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GameFinishTheProject-master\GameFinishTheProject-master\src\app\snake" />
+      <recent name="D:\GameFinishTheProject-master\GameFinishTheProject-master\src\assets" />
+      <recent name="D:\GameFinishTheProject-master\GameFinishTheProject-master\src\app\snake\images" />
+      <recent name="D:\GameFinishTheProject-master\GameFinishTheProject-master" />
+      <recent name="D:\GameFinishTheProject-master\GameFinishTheProject-master\src\app" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.App" />
+      <module name="GameFinishTheProject-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Snake (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Snake" />
+      <module name="GameFinishTheProject-master" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Snake (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.snake.Snake" />
+      <module name="GameFinishTheProject-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.snake.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Snake" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.snake.snake.out.production.untitled1.images.Snake" />
+      <module name="GameFinishTheProject-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.snake.snake.out.production.untitled1.images.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.Snake (2)" />
+        <item itemvalue="Application.Snake (1)" />
+        <item itemvalue="Application.Snake" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02c2b45b-bafb-4a30-ac32-66ea8ae0b878" name="Default Changelist" comment="" />
+      <created>1590530188981</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590530188981</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="357" y="162" key="#App" timestamp="1590611662194">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="357" y="162" key="#App/0.0.1280.984@0.0.1280.984" timestamp="1590611662194" />
+    <state width="1237" height="273" key="GridCell.Tab.0.bottom" timestamp="1590614614177">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="273" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1590614614177" />
+    <state width="1237" height="273" key="GridCell.Tab.0.center" timestamp="1590614614177">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="273" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1590614614177" />
+    <state width="1237" height="273" key="GridCell.Tab.0.left" timestamp="1590614614177">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="273" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1590614614177" />
+    <state width="1237" height="273" key="GridCell.Tab.0.right" timestamp="1590614614177">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state width="1237" height="273" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1590614614177" />
+    <state x="303" y="211" width="672" height="678" key="search.everywhere.popup" timestamp="1590613552647">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="303" y="211" width="672" height="678" key="search.everywhere.popup/0.0.1280.984@0.0.1280.984" timestamp="1590613552647" />
+  </component>
+</project>
